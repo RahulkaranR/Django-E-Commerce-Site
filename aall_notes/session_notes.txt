@@ -1,0 +1,27 @@
+
+when we need to access the django session in the shell we have to so this step
+
+first open the python shell in the enviroment by this command
+
+$ python manage.py shell
+
+import the session module to work on it 
+
+$ from django.contrib.sessions.models import Session
+
+get the session_key in the session database and access the data on the session
+(s = it is a variable)
+(pk = primary key, fk = forgin_key)
+$ s = Session.objects.get(pk='')
+
+pratice area # i22us9c2xqu907j5qtvrwh7ioixitdxj
+
+# s = Session.objects.get(pk='i22us9c2xqu907j5qtvrwh7ioixitdxj')    
+
+then get the specific user pk of fk then we can decoded the data using decode function
+
+$ s.get_decoded()
+
+
+
+

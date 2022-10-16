@@ -1,0 +1,14 @@
+On coverage we can omit other use less files and only test our files 
+on this command
+
+# coverage run --omit='*/venv/*' manage.py test
+
+To see all the reports on coverage and the command is
+
+# coverage report
+
+On Using coverage we can see all the missing places for test and weak places 
+for finding or doing test
+
+# coverage html
+
